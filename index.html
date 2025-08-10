@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="stylesheet.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav id="mainNav">
+    <div class="logo">
+        <a href="#home" class="logo-link">
+            <img src="logo.png" alt="Bite of Bliss" />
+            <span class="logo-text">Bite of Bliss</span>
+        </a>
+    </div>
+    <!-- Hamburger icon for mobile view -->
+    <button class="nav-toggle" aria-label="Toggle navigation">
+        &#9776;
+    </button>
+
+    <div class="nav-links">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#products">Products</a>
+        <a href="#blog">Blog</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div class="nav-spacer"></div>
+</nav>
+
+    <!-- Home Section -->
+    <section id="home">
+      <h1>Welcome to Bite of Bliss</h1>
+      <p>
+        Crafting moments of joy with every bite since 1995. Experience the
+        perfect blend of traditional recipes and modern innovation.
+      </p>
+      
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="about-container">
+        <!-- Image Gallery -->
+        <div class="about-images">
+          <div class="main-image">
+            <img
+              src="https://images.unsplash.com/photo-1556742393-d75f468bfcb0"
+              alt="Bakery Interior"
+            />
+          </div>
+          <div class="image-grid">
+            <img
+              src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf"
+              alt="Bakery Display"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f"
+              alt="Fresh Baked Goods"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1591688515527-f7b20bd05902"
+              alt="Bakery Counter"
+            />
+          </div>
+        </div>
+
+        <div class="about-content">
+          <div class="about-text">
+              At Bite of Bliss, we're all about baking fresh, delicious, and
+              beautifully crafted treats that don't just satisfy your
+              cravings—they create memories. Our bakery is where tradition meets
+              innovation, bringing you a wide range of flavors with a modern
+              twist, from classic croissants to trend-setting treats like matcha
+              donuts and artisanal cookies.
+            </p>
+            <p>
+              We believe in the magic of quality ingredients and unique flavors
+              that keep our creations both nostalgic and refreshingly new.
+              Whether you're a fan of the classics or looking to try something
+              bold, every bite is made with passion, creativity, and a
+              commitment to the environment.
+            </p>
+            <p>
+              Our menu features vegan, gluten-free, and customizable options,
+              making sure there's something for everyone.
+            </p>
+          </div>
+          <div class="about-features">
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-leaf"></i>
+              </div>
+              <span>Organic Ingredients</span>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-bread-slice"></i>
+              </div>
+              <span>Fresh Daily</span>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-seedling"></i>
+              </div>
+              <span>Vegan Options</span>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-award"></i>
+              </div>
+              <span>Award Winning</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+      <div class="menu-header">
+        <h2>Our Menu</h2>
+        <p>Discover our diverse range of freshly baked delights</p>
+
+        <div class="menu-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="veg">Vegetarian</button>
+          <button class="filter-btn" data-filter="non-veg">
+            Non-Vegetarian
+          </button>
+          <button class="filter-btn" data-filter="organic">Organic</button>
+          <button class="filter-btn" data-filter="vegan">Vegan</button>
+        </div>
+      </div>
+
+      <div class="menu-container">
+        <div class="menu-grid">
+          <!-- Vegetarian & Organic Items -->
+          <div class="menu-item" data-category="veg organic">
+            <img
+              src="https://images.unsplash.com/photo-1509440159596-0249088772ff"
+              alt="Artisan Sourdough"
+            />
+            <div class="menu-item-content">
+              <h4>Artisan Sourdough</h4>
+              <p>Traditional sourdough bread made with organic flour</p>
+              <div class="menu-item-footer">
+                <span class="price">$6.99</span>
+                <span class="tags">
+                  <i class="fas fa-leaf" title="Vegetarian"></i>
+                  <i class="fas fa-seedling" title="Organic"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Vegan & Organic Items -->
+          <div class="menu-item" data-category="vegan organic">
+            <img
+              src="https://images.unsplash.com/photo-1557925923-cd4648e211a0"
+              alt="Vegan Blueberry Muffins"
+            />
+            <div class="menu-item-content">
+              <h4>Vegan Blueberry Muffins</h4>
+              <p>Made with fresh blueberries and almond milk</p>
+              <div class="menu-item-footer">
+                <span class="price">$4.99</span>
+                <span class="tags">
+                  <i class="fas fa-seedling" title="Vegan"></i>
+                  <i class="fas fa-leaf" title="Organic"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Non-Vegetarian Items -->
+          <div class="menu-item" data-category="non-veg">
+            <img
+              src="images/cpp.jpg"
+              alt="Chicken Pot Pie"
+            />
+            <div class="menu-item-content">
+              <h4>Classic Chicken Pot Pie</h4>
+              <p>Tender chicken and vegetables in flaky crust</p>
+              <div class="menu-item-footer">
+                <span class="price">$14.99</span>
+                <span class="tags">
+                  <i class="fas fa-drumstick-bite" title="Non-Vegetarian"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Vegetarian Items -->
+          <div class="menu-item" data-category="veg">
+            <img
+              src="https://images.unsplash.com/photo-1555507036-ab1f4038808a"
+              alt="Classic Croissant"
+            />
+            <div class="menu-item-content">
+              <h4>Butter Croissant</h4>
+              <p>Flaky, buttery layers of hand-laminated pastry</p>
+              <div class="menu-item-footer">
+                <span class="price">$3.99</span>
+                <span class="tags">
+                  <i class="fas fa-leaf" title="Vegetarian"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Vegan Items -->
+          <div class="menu-item" data-category="vegan organic">
+            <img
+              src="https://images.unsplash.com/photo-1505252585461-04db1eb84625"
+              alt="Vegan Chocolate Cake"
+            />
+            <div class="menu-item-content">
+              <h4>Vegan Chocolate Cake</h4>
+              <p>Rich chocolate cake made with plant-based ingredients</p>
+              <div class="menu-item-footer">
+                <span class="price">$5.99</span>
+                <span class="tags">
+                  <i class="fas fa-seedling" title="Vegan"></i>
+                  <i class="fas fa-leaf" title="Organic"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Organic Items -->
+          <div class="menu-item" data-category="organic veg">
+            <img
+              src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec"
+              alt="Organic Multigrain Bread"
+            />
+            <div class="menu-item-content">
+              <h4>Multigrain Bread</h4>
+              <p>Healthy blend of organic grains and seeds</p>
+              <div class="menu-item-footer">
+                <span class="price">$7.99</span>
+                <span class="tags">
+                  <i class="fas fa-seedling" title="Organic"></i>
+                  <i class="fas fa-leaf" title="Vegetarian"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Non-Veg & Organic -->
+          <div class="menu-item" data-category="non-veg organic">
+            <img
+              src="images/ava_tur_sand.jpg"
+              alt="Turkey Sandwich"
+            />
+            <div class="menu-item-content">
+              <h4>Turkey Avocado Sandwich</h4>
+              <p>Organic turkey with fresh avocado on sourdough</p>
+              <div class="menu-item-footer">
+                <span class="price">$12.99</span>
+                <span class="tags">
+                  <i class="fas fa-drumstick-bite" title="Non-Vegetarian"></i>
+                  <i class="fas fa-seedling" title="Organic"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Vegan Pastry -->
+          <div class="menu-item" data-category="vegan">
+            <img
+              src="https://images.unsplash.com/photo-1514517604298-cf80e0fb7f1e"
+              alt="Vegan Danish"
+            />
+            <div class="menu-item-content">
+              <h4>Vegan Berry Danish</h4>
+              <p>Plant-based pastry filled with mixed berries</p>
+              <div class="menu-item-footer">
+                <span class="price">$4.99</span>
+                <span class="tags">
+                  <i class="fas fa-seedling" title="Vegan"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Classic Pastry -->
+          <div class="menu-item" data-category="veg">
+            <img
+              src="https://images.unsplash.com/photo-1495147466023-ac5c588e2e94"
+              alt="Apple Pie"
+            />
+            <div class="menu-item-content">
+              <h4>Classic Apple Pie</h4>
+              <p>Fresh apples, cinnamon, buttery crust</p>
+              <div class="menu-item-footer">
+                <span class="price">$18.99</span>
+                <span class="tags">
+                  <i class="fas fa-leaf" title="Vegetarian"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products">
+      <div class="products-header">
+        <h2>Winter Special Collection</h2>
+        <p>Discover our seasonal delights perfect for the cozy winter season</p>
+      </div>
+      <div class="products-grid">
+        <!-- Hot Chocolate Bombs -->
+        <div class="product-card">
+          <div class="product-image">
+            <img
+              src="https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed"
+              alt="Hot Chocolate Bombs"
+            />
+          </div>
+          <div class="product-info">
+            <span class="product-category">Winter Special</span>
+            <h3 class="product-title">Hot Chocolate Bombs</h3>
+            <p class="product-description">
+              Chocolate spheres filled with cocoa mix and marshmallows that melt
+              into a rich drink when placed in warm milk.
+            </p>
+            <div class="product-price">$6.99</div>
+            
+          </div>
+        </div>
+
+        <!-- Gingerbread Cookies -->
+        <div class="product-card">
+          <div class="product-image">
+            <img
+              src="https://images.unsplash.com/photo-1481391243133-f96216dcb5d2"
+              alt="Gingerbread Cookies"
+            />
+          </div>
+          <div class="product-info">
+            <span class="product-category">Holiday Favorites</span>
+            <h3 class="product-title">Gingerbread Cookies</h3>
+            <p class="product-description">
+              Classic cookies with a spicy-sweet ginger flavor, perfect for
+              decorating with icing.
+            </p>
+            <div class="product-price">$4.99</div>
+            
+          </div>
+        </div>
+
+        <!-- Peppermint Bark -->
+        <div class="product-card">
+          <div class="product-image">
+            <img
+              src="images/pepermint_bark.jpg"
+              alt="Peppermint Bark"
+            />
+          </div>
+          <div class="product-info">
+            <span class="product-category">Holiday Treats</span>
+            <h3 class="product-title">Peppermint Bark</h3>
+            <p class="product-description">
+              Layers of dark and white chocolate with crushed candy canes, ideal
+              for gifting and snacking.
+            </p>
+            <div class="product-price">$8.99</div>
+            
+          </div>
+        </div>
+
+        <!-- Cinnamon Rolls -->
+        <div class="product-card">
+          <div class="product-image">
+            <img
+              src="https://images.unsplash.com/photo-1509365465985-25d11c17e812"
+              alt="Cinnamon Rolls"
+            />
+          </div>
+          <div class="product-info">
+            <span class="product-category">Winter Warmers</span>
+            <h3 class="product-title">Cinnamon Rolls</h3>
+            <p class="product-description">
+              Warm, gooey rolls topped with cream cheese frosting, great for
+              cold mornings.
+            </p>
+            <div class="product-price">$5.99</div>
+            
+          </div>
+        </div>
+
+        <!-- Yule Log Cake -->
+        <div class="product-card">
+          <div class="product-image">
+            <img
+              src="https://images.unsplash.com/photo-1481391319762-47dff72954d9"
+              alt="Yule Log Cake"
+            />
+          </div>
+          <div class="product-info">
+            <span class="product-category">Holiday Specials</span>
+            <h3 class="product-title">Yule Log Cake</h3>
+            <p class="product-description">
+              A sponge cake rolled with cream and shaped to resemble a log,
+              decorated for the holiday spirit.
+            </p>
+            <div class="product-price">$24.99</div>
+            
+          </div>
+        </div>
+
+        <!-- Eggnog Cheesecake Bars -->
+        <div class="product-card">
+          <div class="product-image">
+            <img
+              src="https://images.unsplash.com/photo-1508737804141-4c3b688e2546"
+              alt="Eggnog Cheesecake Bars"
+            />
+          </div>
+          <div class="product-info">
+            <span class="product-category">Seasonal Favorites</span>
+            <h3 class="product-title">Eggnog Cheesecake Bars</h3>
+            <p class="product-description">
+              A rich twist on classic cheesecake infused with eggnog flavors.
+            </p>
+            <div class="product-price">$6.99</div>
+            
+          </div>
+        </div>
+
+        <!-- Apple Cider Donuts -->
+        <div class="product-card">
+          <div class="product-image">
+            <img
+              src="https://images.unsplash.com/photo-1556913396-7a3c459ef68e"
+              alt="Apple Cider Donuts"
+            />
+          </div>
+          <div class="product-info">
+            <span class="product-category">Winter Treats</span>
+            <h3 class="product-title">Apple Cider Donuts</h3>
+            <p class="product-description">
+              Soft donuts coated with cinnamon sugar, perfect alongside a warm
+              drink.
+            </p>
+            <div class="product-price">$3.99</div>
+            
+          </div>
+        </div>
+
+        <!-- Spiced Cranberry Muffins -->
+        <div class="product-card">
+          <div class="product-image">
+            <img
+              src="https://images.unsplash.com/photo-1587668178277-295251f900ce"
+              alt="Spiced Cranberry Muffins"
+            />
+          </div>
+          <div class="product-info">
+            <span class="product-category">Winter Delights</span>
+            <h3 class="product-title">Spiced Cranberry Muffins</h3>
+            <p class="product-description">
+              Muffins packed with tart cranberries and winter spices.
+            </p>
+            <div class="product-price">$4.99</div>
+            
+          </div>
+        </div>
+
+        <!-- Shortbread Cookies -->
+        <div class="product-card">
+          <div class="product-image">
+            <img
+              src="https://images.unsplash.com/photo-1548365328-8c6db3220e4c"
+              alt="Shortbread Cookies"
+            />
+          </div>
+          <div class="product-info">
+            <span class="product-category">Holiday Collection</span>
+            <h3 class="product-title">Seasonal Shortbread Cookies</h3>
+            <p class="product-description">
+              Flavors like cardamom-orange, spiced vanilla, or chocolate-dipped
+              shortbread.
+            </p>
+            <div class="product-price">$5.99</div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog">
+      <div class="blog-header">
+        <h2>Our Blog</h2>
+        <p>Latest news, recipes, and updates from our bakery</p>
+      </div>
+      <div class="blog-grid">
+        <!-- Blog Post 1 -->
+        <div class="blog-card">
+          <div class="blog-image">
+            <img
+              src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d"
+              alt="Holiday Baking"
+            />
+          </div>
+          <div class="blog-content">
+            <div class="blog-date">December 15, 2023</div>
+            <h3>Ultimate Holiday Baking Guide</h3>
+            <p>
+              Discover our top tips for perfect holiday treats, from gingerbread
+              to fruit cake. Plus, get our exclusive eggnog recipe!
+            </p>
+            <a href="blog1.html" class="read-more">Read More</a>
+          </div>
+        </div>
+
+        <!-- Blog Post 2 -->
+        <div class="blog-card">
+          <div class="blog-image">
+            <img
+              src="https://images.unsplash.com/photo-1509440159596-0249088772ff"
+              alt="Sourdough Guide"
+            />
+          </div>
+          <div class="blog-content">
+            <div class="blog-date">December 10, 2023</div>
+            <h3>Mastering Sourdough: A Beginner's Guide</h3>
+            <p>
+              Learn how to create and maintain your own sourdough starter, plus
+              troubleshooting common issues.
+            </p>
+            <a href="blog2.html" class="read-more">Read More</a>
+          </div>
+        </div>
+
+        <!-- Blog Post 3 -->
+        <div class="blog-card">
+          <div class="blog-image">
+            <img
+              src="https://images.unsplash.com/photo-1514517604298-cf80e0fb7f1e"
+              alt="Vegan Baking"
+            />
+          </div>
+          <div class="blog-content">
+            <div class="blog-date">December 5, 2023</div>
+            <h3>Vegan Baking Substitutes That Actually Work</h3>
+            <p>
+              Your complete guide to egg, dairy, and honey alternatives that
+              will make your vegan bakes just as delicious.
+            </p>
+            <a href="blog3.html" class="read-more">Read More</a>
+          </div>
+        </div>
+
+        <!-- Blog Post 4 -->
+        <div class="blog-card">
+          <div class="blog-image">
+            <img
+              src="https://images.unsplash.com/photo-1495147466023-ac5c588e2e94"
+              alt="Perfect Pie"
+            />
+          </div>
+          <div class="blog-content">
+            <div class="blog-date">November 28, 2023</div>
+            <h3>The Secret to Perfect Pie Crust</h3>
+            <p>
+              Master the art of flaky, buttery pie crust with our step-by-step
+              guide and professional tips.
+            </p>
+            <a href="blog4.html" class="read-more">Read More</a>
+          </div>
+        </div>
+
+        <!-- Blog Post 5 -->
+        <div class="blog-card">
+          <div class="blog-image">
+            <img
+              src="https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62"
+              alt="Chocolate Work"
+            />
+          </div>
+          <div class="blog-content">
+            <div class="blog-date">November 20, 2023</div>
+            <h3>Chocolate Tempering 101</h3>
+            <p>
+              Learn the basics of chocolate tempering and create
+              professional-looking chocolate decorations at home.
+            </p>
+            <a href="blog5.html" class="read-more">Read More</a>
+          </div>
+        </div>
+
+        <!-- Blog Post 6 -->
+        <div class="blog-card">
+          <div class="blog-image">
+            <img
+              src="https://images.unsplash.com/photo-1464195244916-405fa0a82545"
+              alt="Kids Baking"
+            />
+          </div>
+          <div class="blog-content">
+            <div class="blog-date">November 15, 2023</div>
+            <h3>Baking with Kids: Fun and Easy Recipes</h3>
+            <p>
+              Get the whole family involved with these kid-friendly recipes that
+              are both fun and educational.
+            </p>
+            <a href="blog6.html" class="read-more">Read More</a>
+          </div>
+        </div>
+
+        <!-- Blog Post 7 -->
+        <div class="blog-card">
+          <div class="blog-image">
+            <img
+              src="https://images.unsplash.com/photo-1483695028939-5bb13f8648b0"
+              alt="Gluten Free"
+            />
+          </div>
+          <div class="blog-content">
+            <div class="blog-date">November 10, 2023</div>
+            <h3>Guide to Gluten-Free Flours</h3>
+            <p>
+              Explore different gluten-free flour options and learn how to use
+              them in your favorite recipes.
+            </p>
+            <a href="#" class="read-more">Read More</a>
+          </div>
+        </div>
+
+        <!-- Blog Post 8 -->
+        <div class="blog-card">
+          <div class="blog-image">
+            <img
+              src="https://images.unsplash.com/photo-1488477181946-6428a0291777"
+              alt="Coffee Pairing"
+            />
+          </div>
+          <div class="blog-content">
+            <div class="blog-date">November 5, 2023</div>
+            <h3>Perfect Coffee and Pastry Pairings</h3>
+            <p>
+              Discover which pastries pair perfectly with different coffee
+              roasts and brewing methods.
+            </p>
+            <a href="#" class="read-more">Read More</a>
+          </div>
+        </div>
+
+        <!-- Blog Post 9 -->
+        <div class="blog-card">
+          <div class="blog-image">
+            <img
+              src="https://images.unsplash.com/photo-1515037893149-de7f840978e2"
+              alt="Kitchen Tools"
+            />
+          </div>
+          <div class="blog-content">
+            <div class="blog-date">October 30, 2023</div>
+            <h3>Essential Baking Tools Every Baker Needs</h3>
+            <p>
+              Our comprehensive guide to must-have baking tools and equipment
+              for both beginners and professionals.
+            </p>
+            <a href="#" class="read-more">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews">
+      <h2 class="reviews-header">Customer Reviews</h2>
+      <div class="reviews-container">
+        <!-- Existing Review 1 -->
+        <div class="review-card">
+          <div class="review-header">
+            <img src="https://api.dicebear.com/6.x/initials/svg?seed=John Doe" alt="Reviewer" class="reviewer-image">
+            <div class="reviewer-info">
+              <h4>John Doe</h4>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+          <p class="review-text">The pastries here are amazing! I love the chocolate croissants.</p>
+          <span class="review-date">January 15, 2023</span>
+        </div>
+    
+        <!-- Existing Review 2 -->
+        <div class="review-card">
+          <div class="review-header">
+            <img src="https://api.dicebear.com/6.x/initials/svg?seed=Jane Smith" alt="Reviewer" class="reviewer-image">
+            <div class="reviewer-info">
+              <h4>Jane Smith</h4>
+              <div class="stars">★★★★☆</div>
+            </div>
+          </div>
+          <p class="review-text">Great service and delicious cakes! Will definitely come back.</p>
+          <span class="review-date">February 10, 2023</span>
+        </div>
+    
+        <!-- New Review 3 -->
+        <div class="review-card">
+          <div class="review-header">
+            <img src="https://api.dicebear.com/6.x/initials/svg?seed=Mike Johnson" alt="Reviewer" class="reviewer-image">
+            <div class="reviewer-info">
+              <h4>Mike Johnson</h4>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+          <p class="review-text">Absolutely love this place! The bread is always fresh and warm.</p>
+          <span class="review-date">March 5, 2023</span>
+        </div>
+    
+        <!-- New Review 4 -->
+        <div class="review-card">
+          <div class="review-header">
+            <img src="https://api.dicebear.com/6.x/initials/svg?seed=Emily Davis" alt="Reviewer" class="reviewer-image">
+            <div class="reviewer-info">
+              <h4>Emily Davis</h4>
+              <div class="stars">★★★★☆</div>
+            </div>
+          </div>
+          <p class="review-text">The cookies are to die for! A must-try for anyone visiting.</p>
+          <span class="review-date">April 12, 2023</span>
+        </div>
+    
+        <!-- New Review 5 -->
+        <div class="review-card">
+          <div class="review-header">
+            <img src="https://api.dicebear.com/6.x/initials/svg?seed=Chris Brown" alt="Reviewer" class="reviewer-image">
+            <div class="reviewer-info">
+              <h4>Chris Brown</h4>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+          <p class="review-text">Best bakery in town! Their muffins are my favorite.</p>
+          <span class="review-date">May 20, 2023</span>
+        </div>
+      </div>
+      <button class="leave-review-btn">Leave a Review</button>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <h4>Visit Us</h4>
+                <p>123 Bakery Street<br />Sweet Town, ST 12345</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div>
+                <h4>Call Us</h4>
+                <p>(555) 123-4567</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <h4>Email Us</h4>
+                <p>info@sweetdelights.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="business-hours">
+            <h4>Business Hours</h4>
+            <ul class="hours-list">
+              <li>
+                <span>Monday - Friday</span> <span>7:00 AM - 7:00 PM</span>
+              </li>
+              <li><span>Saturday</span> <span>8:00 AM - 6:00 PM</span></li>
+              <li><span>Sunday</span> <span>8:00 AM - 3:00 PM</span></li>
+            </ul>
+          </div>
+        </div>
+        <form id="contact-form" 
+        action="https://formspree.io/f/mgveybwy"
+        method="POST">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone"/>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" name="message"></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.2304754131164!2d76.36193427559738!3d30.356567074757382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391028ab86533db5%3A0x93cc1f72eae42d3e!2sThapar%20Institute%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin"
+        width="100%"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      >
+      </iframe>
+    </div>
+
+    <!-- Add location details above the map -->
+    <div class="location-details">
+      <div class="location-info">
+        <h3>Visit Our Bakery</h3>
+        <address>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> Near Thapar University Main
+            Gate
+          </p>
+          <p>Bhadson Road, Patiala</p>
+          <p>Punjab, India - 147004</p>
+        </address>
+        <div class="location-contact">
+          <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+          <p><i class="fas fa-clock"></i> Open Daily: 8:00 AM - 9:00 PM</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- At the end of the body, before closing </body> tag -->
+    <script>
+      // Scroll Effect
+      window.addEventListener("scroll", function () {
+        const nav = document.getElementById("mainNav");
+        if (window.scrollY > 50) {
+          nav.classList.add("scrolled");
+        } else {
+          nav.classList.remove("scrolled");
+        }
+      });
+
+      // Active Link Handling
+      const navLinks = document.querySelectorAll(".nav-links a");
+      const sections = document.querySelectorAll("section");
+
+      window.addEventListener("scroll", () => {
+        let current = "";
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          if (pageYOffset >= sectionTop - 60) {
+            current = section.getAttribute("id");
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href").slice(1) === current) {
+            link.classList.add("active");
+          }
+        });
+      });
+
+      const menuToggle = document.querySelector('.nav-toggle');
+      const nav_Links = document.querySelector('.nav-links');
+
+     menuToggle.addEventListener('click', () => {
+        nav_Links.style.display = nav_Links.style.display === 'block' ? 'none' : 'block';
+});
+
+      document
+        .querySelector(".logo-link")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+
+          history.pushState(null, null, "#home");
+
+          document.querySelectorAll(".nav-links a").forEach((link) => {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === "#home") {
+              link.classList.add("active");
+            }
+          });
+        });
+
+      // Menu Filtering
+document.addEventListener("DOMContentLoaded", function () {
+  const filterBtns = document.querySelectorAll(".filter-btn");
+  const menuItems = document.querySelectorAll(".menu-item");
+
+  // Display all items when the page loads
+  menuItems.forEach((item) => {
+    item.style.display = ""; // Reset display to default
+    item.classList.add("show"); // Optionally add "show" class if needed
+  });
+
+  filterBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      // Remove active class from all buttons
+      filterBtns.forEach((btn) => btn.classList.remove("active"));
+      // Add active class to clicked button
+      btn.classList.add("active");
+
+      const filter = btn.getAttribute("data-filter");
+
+      menuItems.forEach((item) => {
+        // Show all items if 'all' is selected
+        if (filter === "all") {
+          item.style.display = "";
+          item.classList.add("show");
+        } else {
+          // Check if item has the selected category
+          if (item.getAttribute("data-category").includes(filter)) {
+            item.style.display = "";
+            item.classList.add("show");
+          } else {
+            item.style.display = "none";
+            item.classList.remove("show");
+          }
+        }
+      });
+    });
+  });
+});
+
+      // Review Functionality
+      document.addEventListener("DOMContentLoaded", function () {
+        const reviewPopup = document.getElementById("reviewPopup");
+        const leaveReviewBtn = document.querySelector(".leave-review-btn");
+        const closePopup = document.querySelector(".close-popup");
+        const reviewForm = document.getElementById("reviewForm");
+        const stars = document.querySelectorAll(".star-rating i");
+        const reviewsContainer = document.querySelector(".reviews-container");
+
+        // Open popup
+        leaveReviewBtn.addEventListener("click", () => {
+          reviewPopup.classList.add("active");
+        });
+
+        // Close popup
+        closePopup.addEventListener("click", () => {
+          reviewPopup.classList.remove("active");
+        });
+
+        // Close popup when clicking outside
+        window.addEventListener("click", (e) => {
+          if (e.target === reviewPopup) {
+            reviewPopup.classList.remove("active");
+          }
+        });
+
+        // Star rating functionality
+        stars.forEach((star) => {
+          star.addEventListener("mouseover", () => {
+            const rating = star.dataset.rating;
+            updateStars(rating);
+          });
+
+          star.addEventListener("click", () => {
+            const rating = star.dataset.rating;
+            document.getElementById("reviewRating").value = rating;
+            updateStars(rating);
+          });
+        });
+
+        document
+          .querySelector(".star-rating")
+          .addEventListener("mouseleave", () => {
+            const currentRating =
+              document.getElementById("reviewRating").value || 0;
+            updateStars(currentRating);
+          });
+
+        function updateStars(rating) {
+          stars.forEach((star) => {
+            const starRating = star.dataset.rating;
+            if (starRating <= rating) {
+              star.classList.remove("far");
+              star.classList.add("fas");
+            } else {
+              star.classList.remove("fas");
+              star.classList.add("far");
+            }
+          });
+        }
+
+        // Handle form submission
+        reviewForm.addEventListener("submit", (e) => {
+          e.preventDefault();
+
+          const name = document.getElementById("reviewName").value;
+          const rating = document.getElementById("reviewRating").value;
+          const text = document.getElementById("reviewText").value;
+          const date = new Date().toLocaleDateString("en-US", {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+          });
+
+          // Create new review card
+          const reviewCard = document.createElement("div");
+          reviewCard.className = "review-card new";
+          reviewCard.innerHTML = `
+            <div class="review-header">
+              <img src="https://api.dicebear.com/6.x/initials/svg?seed=${name}" alt="Reviewer" class="reviewer-image">
+              <div class="reviewer-info">
+                <h4>${name}</h4>
+                <div class="stars">
+                  ${"★".repeat(rating)}${"☆".repeat(5 - rating)}
+                </div>
+              </div>
+            </div>
+            <p class="review-text">${text}</p>
+            <span class="review-date">${date}</span>
+          `;
+
+          // Add new review to the container
+          reviewsContainer.insertBefore(
+            reviewCard,
+            reviewsContainer.firstChild
+          );
+
+          // Reset form and close popup
+          reviewForm.reset();
+          reviewPopup.classList.remove("active");
+          updateStars(0);
+        });
+      });
+      const submit = document.getElementById("contact-form").addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent the default form submission
+      
+        // Use Fetch API to send form data to Formspree
+        fetch(this.action, {
+          method: this.method,
+          body: new FormData(this),
+          headers: {
+            Accept: "application/json",
+          },
+        })
+          .then((response) => {
+            if (response.ok) {
+              alert("Message was successfully sent!");
+              this.reset(); // Reset the form
+            } else {
+              alert("There was a problem sending your message.");
+            }
+          })
+          .catch((error) => {
+            alert("There was a problem sending your message.");
+          });
+      });
+    </script>
+
+    <!-- Review Popup Form -->
+    <div class="review-popup" id="reviewPopup">
+      <div class="review-popup-content">
+        <span class="close-popup">&times;</span>
+        <h3>Write a Review</h3>
+        <form id="reviewForm">
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" id="reviewName" required />
+          </div>
+
+          <div class="form-group">
+            <label>Rating</label>
+            <div class="star-rating">
+              <i class="far fa-star" data-rating="1"></i>
+              <i class="far fa-star" data-rating="2"></i>
+              <i class="far fa-star" data-rating="3"></i>
+              <i class="far fa-star" data-rating="4"></i>
+              <i class="far fa-star" data-rating="5"></i>
+            </div>
+            <input type="hidden" id="reviewRating" required />
+          </div>
+
+          <div class="form-group">
+            <label>Your Review</label>
+            <textarea id="reviewText" rows="4" required></textarea>
+          </div>
+
+          <button type="submit" class="submit-review-btn">Submit Review</button>
+        </form>
+      </div>
+    </div>
+   
+  </body>
+</html>
